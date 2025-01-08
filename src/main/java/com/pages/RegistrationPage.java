@@ -15,10 +15,16 @@ public class RegistrationPage extends Weblocators {
 		this.driver = driver;
 	}
 
-	
-
 	public void SelectGender() {
 		click(By.xpath(RegistrationLocator.Male));
+	}
+
+	public String verifyUserRegistration() {
+		return getText(By.className(RegistrationLocator.RegistrationSuccess));
+	}
+
+	public String verifyEmailalreadyPresent() {
+		return getText(By.className(RegistrationLocator.EmailalreadyPresent));
 	}
 
 	public void EnterFirstName() {

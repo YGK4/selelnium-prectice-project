@@ -2,7 +2,7 @@ package com.locators;
 
 public interface RegistrationLocator {
 	
-	public  static String RegisterButton = "//a[normalize-space()='Register']";
+	 String RegisterButton = "//a[normalize-space()='Register']";
 	public static String LoginButton = "//a[normalize-space()='Log in']";
 	public static String Shoppingcart = "//span[normalize-space()='Shopping cart']";
 	public static String Wishlist = "//span[normalize-space()='Wishlist']";
@@ -22,5 +22,8 @@ public interface RegistrationLocator {
 	public static String Login = "//input[@value='Log in']";
 	public static String Username = "//input[@id='Email']";
 	public static String Forgotpassword = "//a[normalize-space()='Forgot password?']";
+	
+	String RegistrationSuccess = "result";
+	String EmailalreadyPresent ="validation-summary-errors";
 
 }

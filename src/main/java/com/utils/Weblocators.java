@@ -17,4 +17,8 @@ public class Weblocators {
 	public void enterkeys(By locator, String data) {
 		driver.findElement((locator)).sendKeys(data);
 	}
+	
+	public String getText(By locator) {
+		return driver.findElement((locator)).getText();
+	}
 }
